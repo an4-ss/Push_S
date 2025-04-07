@@ -6,13 +6,14 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/20 23:22:38 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/06 14:55:14 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/07 11:13:26 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ft_push_chunk(t_ps *arr, int chunk_upper_bound, int chunk_midpoint, size_t chunck_size)
+void	ft_push_chunk(t_ps *arr, int chunk_upper_bound,	
+	int chunk_midpoint, size_t chunck_size)
 {
 	size_t	i;
 	size_t	count;
@@ -64,19 +65,19 @@ void	ft_push_to_a(t_ps *arr)
 
 void	ft_push_to_b(t_ps *arr, size_t chunck_size)
 {
-	int	chunk_upper_bound;
-	int	chunk_range;
-	int	chunk_midpoint;
+	int	chunk_u;
+	int	chunk_r;
+	int	chunk_m;
 
-	chunk_upper_bound = get_nth_largest(arr->arr_a, arr->size_a, chunck_size);
-	chunk_range = chunk_upper_bound - arr->arr_a[get_min_nbr_i(arr->arr_a, arr->size_a)];
-	chunk_midpoint = chunk_upper_bound - (chunk_range / 2);
+	chunk_u = get_nth_largest(arr->arr_a, arr->size_a, chunck_size);
+	chunk_r = chunk_u - (arr->arr_a[get_min_nbr_i(arr->arr_a, arr->size_a)]);
+	chunk_m = chunk_u - (chunk_r / 2);
 	while (arr->size_a > 0)
 	{
-		ft_push_chunk(arr, chunk_upper_bound, chunk_midpoint, chunck_size);
-		chunk_upper_bound = get_nth_largest(arr->arr_a, arr->size_a, chunck_size);
-		chunk_range = chunk_upper_bound - arr->arr_a[get_min_nbr_i(arr->arr_a, arr->size_a)];
-		chunk_midpoint = chunk_upper_bound - (chunk_range / 2);
+		ft_push_chunk(arr, chunk_u, chunk_m, chunck_size);
+		chunk_u = get_nth_largest(arr->arr_a, arr->size_a, chunck_size);
+		chunk_r = chunk_u - arr->arr_a[get_min_nbr_i(arr->arr_a, arr->size_a)];
+		chunk_m = chunk_u - (chunk_r / 2);
 	}
 }
 

@@ -6,7 +6,7 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 16:11:23 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/05 14:29:41 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/07 11:25:43 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ int	get_nth_largest(int *arr, size_t size, int max)
 	}
 	return (arr[i]);
 }
- size_t	get_min_nbr_i(int *arr, size_t size)
+
+size_t	get_min_nbr_i(int *arr, size_t size)
 {
 	size_t	i;
 	size_t	min_index;

@@ -6,7 +6,7 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 14:50:23 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/05 14:20:54 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/07 11:24:44 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void	ra(t_ps *arr)
 	arr->arr_a[arr->size_a - 1] = tmp;
 	ft_putstr("ra\n");
 }
+
 void	rb(t_ps *arr)
 {
 	size_t	i;

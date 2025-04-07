@@ -6,7 +6,7 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 15:34:23 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/05 15:34:57 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/07 10:47:00 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ void	tiny_sort(t_ps *arr)
 	int	max;
 
 	max = get_nth_largest(arr->arr_a, arr->size_a, arr->size_a);
-	if (arr->size_a == 2 || max == arr->arr_a[2])
+	if ((arr->size_a == 2 || max == arr->arr_a[2])
+		&& !ft_is_sorted(arr->arr_a, arr->size_a))
 		return (sa(arr));
 	if (arr->arr_a[0] == max)
 		ra(arr);
