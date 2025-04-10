@@ -6,11 +6,11 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 15:11:22 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/07 12:02:01 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/07 14:48:13 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../includes/push_swap.h"
 
 size_t	ft_get_arr_size(size_t count, char **buffer)
 {

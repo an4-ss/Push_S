@@ -6,11 +6,11 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 15:09:02 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/07 11:07:39 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/10 18:16:50 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "includes/push_swap.h"
 
 t_ps	*ft_init(size_t ac, char **av)
 {
@@ -33,7 +33,7 @@ t_ps	*ft_init(size_t ac, char **av)
 		return (free(arr->arr_a), free(arr), NULL);
 	arr->arr_b = malloc(arr->size_a * sizeof(int));
 	if (!arr->arr_b)
-		return (free(arr), free(arr->arr_a), NULL);
+		return (free(arr->arr_a), free(arr), NULL);
 	arr->size_b = 0;
 	return (arr);
 }

@@ -19,15 +19,13 @@ NAME = push_swap
 
 FLAGS = -Wall -Wextra -Werror -g
 
-I = -I ./includes/
-
 all : $(NAME)
 
 $(NAME) : $(OBG)
 	cc $(OBG) -o $@
 
-$(OBG) : %.o : %.c
-	cc -c $(FLAGS) $(I) $^ -o $@
+%.o : %.c includes/push_swap.h
+	cc $(FLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBG)
@@ -37,4 +35,4 @@ fclean : clean
 
 re : fclean all
 
-.PHONY : clean
+.PHONY : clean 

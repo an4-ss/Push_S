@@ -6,11 +6,11 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 10:08:05 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/07 11:09:11 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/07 14:48:18 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../includes/push_swap.h"
 
 void	sortfive(t_ps *arr)
 {

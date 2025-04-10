@@ -6,11 +6,11 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/02 13:04:19 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/07 11:26:47 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/07 14:47:29 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "includes/push_swap.h"
 
 int	check_empty(int ac, char **av)
 {

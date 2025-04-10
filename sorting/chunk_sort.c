@@ -6,11 +6,11 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/20 23:22:38 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/07 11:13:26 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/07 15:46:14 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../includes/push_swap.h"
 
 void	ft_push_chunk(t_ps *arr, int chunk_upper_bound,	
 	int chunk_midpoint, size_t chunck_size)

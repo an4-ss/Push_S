@@ -6,11 +6,11 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 12:19:10 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/05 14:15:37 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/10 20:28:12 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../includes/push_swap.h"
 
 int	is_number(char c)
 {

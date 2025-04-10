@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/07 11:18:04 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/07 11:23:14 by arokhsi          ###   ########.fr       */
+/*   Created: 2025/04/10 20:03:59 by arokhsi           #+#    #+#             */
+/*   Updated: 2025/04/10 20:28:05 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../includes/push_swap.h"
 
 size_t	process_number(char *str, size_t *j, size_t *size)
 {
