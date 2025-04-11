@@ -17,7 +17,7 @@ OBG = $(SRCS:.c=.o)
 
 NAME = push_swap
 
-FLAGS = -Wall -Wextra -Werror -g
+FLAGS = -Wall -Wextra -Werror
 
 all : $(NAME)
 

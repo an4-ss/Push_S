@@ -6,7 +6,7 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/02 13:01:25 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/10 20:39:21 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/11 16:26:12 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef struct s_ps
 	int		*arr_b;
 	size_t	size_a;
 	size_t	size_b;
-}t_ps;
+}	t_ps;
 
 void	ft_putstr(char *str);
 long	ft_atol(char *str);

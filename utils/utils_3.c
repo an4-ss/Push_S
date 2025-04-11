@@ -6,7 +6,7 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 20:03:59 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/10 20:28:05 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/11 16:07:50 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ int	process_and_store_number(char *str, size_t *j, t_ps *arr, size_t *a)
 	if (!is_number(str[*j]) && !is_sign(str[*j]))
 		return (0);
 	tmp = ft_atol(&str[*j]);
-	if (tmp > (long)INT_MAX || tmp < (long)INT_MIN)
-		return (write(2, "Error\n", 6), 1);
 	arr->arr_a[(*a)++] = (int)tmp;
 	return (0);
 }

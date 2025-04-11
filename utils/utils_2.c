@@ -6,7 +6,7 @@
 /*   By: arokhsi <arokhsi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 12:19:10 by arokhsi           #+#    #+#             */
-/*   Updated: 2025/04/10 20:28:12 by arokhsi          ###   ########.fr       */
+/*   Updated: 2025/04/11 16:23:53 by arokhsi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,12 @@ int	is_sign(char c)
 	return (0);
 }
 
+static void	ft_skip(char **str)
+{
+	while (**str == 32 || (**str >= 9 && **str <= 13))
+		(*str)++;
+}
+
 long	ft_atol(char *str)
 {
 	int		i;
@@ -35,8 +41,7 @@ long	ft_atol(char *str)
 	res = 0;
 	i = 0;
 	sign = 1;
-	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
-		i++;
+	ft_skip(&str);
 	while (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
@@ -46,6 +51,11 @@ long	ft_atol(char *str)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		res = res * 10 + (str[i] - '0');
+		if ((res * sign) > INT_MAX || (res * sign) < INT_MIN)
+		{
+			write (2, "Error\n", 6);
+			exit (0);
+		}
 		i++;
 	}
 	return (res * sign);
